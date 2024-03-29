@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="casa-container">
+    <div class="casa">
+      <div class="techo">
+        <div class="chimenea"></div>
+      </div>
+      <div class="pared-frontal">
+        <div class="fila-ventanas">
+          <div class="ventana" [ngClass]="{'encendida': valorSala}">
+            <div class="nombre">Sala</div>
+          </div>
+          <div class="ventana" [ngClass]="{'encendida': valorCocina}">
+            <div class="nombre">Cocina</div>
+          </div>
+          <div class="ventana" [ngClass]="{'encendida': valorComedor}">
+            <div class="nombre">Comedor</div>
+          </div>
+        </div>
+        <div class="fila-ventanas">
+          <div class="ventana" [ngClass]="{'encendida': valorDormitorio1}">
+            <div class="nombre">Dorm 1</div>
+          </div>
+          <div class="ventana" [ngClass]="{'encendida': valorDormitorio2}">
+            <div class="nombre">Dorm 2</div>
+          </div>
+          <div class="ventana" [ngClass]="{'encendida': valorBano}">
+            <div class="nombre">Baño</div>
+          </div>
+        </div>
+        <div class="puerta"></div> <!-- Aquí se agrega la puerta -->
+      </div>
+    </div>
+    <div class="llano"></div>
+  </div>
+</ion-content>
