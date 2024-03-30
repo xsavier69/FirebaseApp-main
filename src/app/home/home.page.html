@@ -1,35 +1,51 @@
+<!-- Este bloque de código representa la estructura visual de una casa, con ventanas que pueden encenderse o apagarse dependiendo de un valor booleano asociado a cada una de ellas. -->
+
 <ion-content>
+  <!-- Contenedor principal del contenido -->
   <div class="casa-container">
+    <!-- División que representa la casa -->
     <div class="casa">
+      <!-- División para el techo de la casa, con una chimenea -->
       <div class="techo">
         <div class="chimenea"></div>
       </div>
+      <!-- Pared frontal de la casa con ventanas y una puerta -->
       <div class="pared-frontal">
+        <!-- Fila de ventanas superiores -->
         <div class="fila-ventanas">
+          <!-- Ventana de la sala con un nombre asociado -->
           <div class="ventana" [ngClass]="{'encendida': valorSala}">
             <div class="nombre">Sala</div>
           </div>
+          <!-- Ventana de la cocina con un nombre asociado -->
           <div class="ventana" [ngClass]="{'encendida': valorCocina}">
             <div class="nombre">Cocina</div>
           </div>
+          <!-- Ventana del comedor con un nombre asociado -->
           <div class="ventana" [ngClass]="{'encendida': valorComedor}">
             <div class="nombre">Comedor</div>
           </div>
         </div>
+        <!-- Fila de ventanas inferiores -->
         <div class="fila-ventanas">
+          <!-- Ventana del dormitorio 1 con un nombre asociado -->
           <div class="ventana" [ngClass]="{'encendida': valorDormitorio1}">
-            <div class="nombre">Dorm 1</div>
+            <div class="nombre">Dormitorio 1</div>
           </div>
+          <!-- Ventana del dormitorio 2 con un nombre asociado -->
           <div class="ventana" [ngClass]="{'encendida': valorDormitorio2}">
-            <div class="nombre">Dorm 2</div>
+            <div class="nombre">Dormitorio 2</div>
           </div>
+          <!-- Ventana del baño con un nombre asociado -->
           <div class="ventana" [ngClass]="{'encendida': valorBano}">
             <div class="nombre">Baño</div>
           </div>
         </div>
-        <div class="puerta"></div> <!-- Aquí se agrega la puerta -->
+        <!-- División que representa la puerta de la casa -->
+        <div class="puerta"></div> 
       </div>
     </div>
+    <!-- División que representa el suelo o terreno donde se encuentra la casa -->
     <div class="llano"></div>
   </div>
 </ion-content>
